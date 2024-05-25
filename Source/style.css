@@ -1,0 +1,202 @@
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+
+/* Navigation bar */
+.nav-menu{
+    background-color:whitesmoke;
+    overflow: hidden;
+    position:fixed;
+    width: 100%;
+    opacity:0.8;
+    z-index: 1;
+}
+
+.nav-menu-logo{
+    height: 70px;
+    width: 175px;
+    float: left;
+}
+
+.nav-menu-right{
+    float: right;
+}
+
+.nav-menu-right a{
+    float: left;
+    display: block;
+    color:#2f1802;
+    text-align: center;
+    padding: 25px 25px;
+    text-decoration: none;
+    font-family: sans-serif;
+    /* font-size: 16px; */
+}
+
+.active,
+.nav-menu-right a:hover{
+    border-bottom: 3px solid #2f1802;
+}
+
+.nav-menu-right a:active{
+    background-color:#685136;
+    color: white;
+}
+
+
+/* Slideshow */
+.slideshow{
+    container: flex;
+    /* max-width: 1000px;*/
+    position:relative;
+    /* z-index: -1; */
+}
+   
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+.scroll-box {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.scroll-box a {
+    padding: 14px 18px;
+    border-radius: 25px;
+    color: #2f1802;
+    background-color: whitesmoke;
+    text-decoration: none;
+}
+
+.scroll-box a:hover {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+
+/* thank you block */
+.thankyou{
+    height: 400px;
+    width: 100%;
+    background-image: url(../Assests/Images/thankyou-bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.thankyou-content{
+background-color: black;
+opacity: 0.5;
+}
+
+.thankyou-img{
+    height: 200px;
+    width: 256px;
+    display: block;
+    margin: auto;
+    padding: 100px;
+    opacity: none;
+}
+
+
+/* Footer */
+.footer{
+    background-color: whitesmoke;
+    color: #2f1802;
+    position:sticky;
+    bottom: 0;
+    width: 100%;
+    line-height: 30px;
+}
+
+.footer a{
+    color: #2f1802;
+    text-decoration: none;
+}
+
+.footer a:hover,
+.footer a:active{
+    color: red;
+    text-decoration: none;
+}
+
+.footer-left,
+.footer-center-left,
+.footer-center-right,
+.footer-right{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.footer-left{
+    width: 30%;
+    /* padding:; */
+    /* float: left; */
+}
+
+.footer-logo{
+    height: 200px;
+    width: 200px;
+    padding: 30px 60px;
+    background-size: cover;
+}
+
+.footer-center-left{
+    width: 20%;
+    padding: 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-center-right{
+    width: 20%;
+    padding: 20px;
+}
+
+.footer-right{
+    width: 20%;
+    padding: 20px;
+}
+
+.footer-right{
+    /* float:right */
+}
+
+.footer-social{
+    letter-spacing: 10px;
+}
+
+.footer-cname p{
+    text-align: center;
+}
+
+.footer-cname a{
+    float:right;
+}
+
+.footer-ample{
+    height: 20px;
+    width: 127px;
+}
